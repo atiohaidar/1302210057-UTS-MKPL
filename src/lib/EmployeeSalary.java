@@ -1,8 +1,8 @@
 public class EmployeeSalary{
 
- private int monthlySalary;
-	private int otherMonthlyIncome;
-	private int annualDeductible;
+ private int monthlySalary = 0;
+	private int otherMonthlyIncome = 0;
+	private int annualDeductible = 0;
 	   /**
 	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3: 7.000.000 per bulan)
 	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
