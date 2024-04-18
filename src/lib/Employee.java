@@ -41,7 +41,7 @@ public class Employee {
 		this.dayJoined = dayJoined;
 		this.isForeigner = isForeigner;
 		this.gender = gender;
-		employeeSalary = new EmployeeSalary()
+		employeeSalary = new EmployeeSalary(isForeigner);
 
 		
 		childNames = new LinkedList<String>();
@@ -68,6 +68,6 @@ public class Employee {
 			monthWorkingInYear = 12;
 		}
 		
-		return TaxFunction.calculateTax(employeeSalary.monthlySalary, employeeSalary.otherMonthlyIncome, monthWorkingInYear, annualDeductible, spouseIdNumber.equals(""), childIdNumbers.size());
+		return TaxFunction.calculateTax(employeeSalary.getMonthlySalary(), employeeSalary.getOtherMonthlyIncome(), monthWorkingInYear, getAnnualIncomeTax(), spouseIdNumber.equals(""), childIdNumbers.size());
 	}
 }
