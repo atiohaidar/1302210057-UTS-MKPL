@@ -16,7 +16,10 @@ public class EmployeeSalary{
 
 	}
 
-
+/**
+ * Fungsi setMothlySalary berguna untuk menentukan gaji dari karyawan bedasarkan grade dan bedasarkan apkah dia forigner atau bukan
+ * @param grade
+ */
 	public void setMonthlySalary(int grade) {	
 		if (grade == 1) {
 			monthlySalary = 3000000;
