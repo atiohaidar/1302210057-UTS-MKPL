@@ -26,12 +26,6 @@ public class Employee {
 	// private boolean gender; //true = Laki-laki, false = Perempuan
 	
 	
-	private String spouseName;
-	private String spouseIdNumber;
-
-	private List<String> childNames;
-	private List<String> childIdNumbers;
-
 	private EmployeeSalary employeeSalary;
 	
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
@@ -48,19 +42,9 @@ public class Employee {
 		employeeSalary = new EmployeeSalary(isForeigner);
 
 		
-		childNames = new LinkedList<String>();
-		childIdNumbers = new LinkedList<String>();
+	;
 	}
-	public void setSpouse(String spouseName, String spouseIdNumber) {
-		this.spouseName = spouseName;
-		this.spouseIdNumber = idNumber;
-	}
-	
-	public void addChild(String childName, String childIdNumber) {
-		childNames.add(childName);
-		childIdNumbers.add(childIdNumber);
-	}
-	
+
 	public int getAnnualIncomeTax() {
 		
 		//Menghitung berapa lama pegawai bekerja dalam setahun ini, jika pegawai sudah bekerja dari tahun sebelumnya maka otomatis dianggap 12 bulan.
