@@ -38,7 +38,10 @@ public class EmployeeSalary{
 			}
 		}
 	}
-	
+/**
+ * fungsi ini berfungsi untuk mengubah Annual Dectible dari karyawan
+ * @param deductible
+ */
 	public void setAnnualDeductible(int deductible) {	
 		this.annualDeductible = deductible;
 	}
