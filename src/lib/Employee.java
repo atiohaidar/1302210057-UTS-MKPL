@@ -5,6 +5,10 @@ import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 
+
+/**
+ * class employee merupakan class yang menyimppan data daata employee
+ */
 public class Employee {
 
 	// private String employeeId;
