@@ -22,7 +22,7 @@ public class Employee {
 	// private boolean gender; //true = Laki-laki, false = Perempuan
 	
 	
-	// private String spouseName;
+	private String spouseName;
 	private String spouseIdNumber;
 
 	private List<String> childNames;
@@ -31,16 +31,16 @@ public class Employee {
 	private EmployeeSalary employeeSalary;
 	
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
-		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		// this.employeeId = employeeId;
+		// this.firstName = firstName;
+		// this.lastName = lastName;
 		this.idNumber = idNumber;
-		this.address = address;
+		// this.address = address;
 		this.yearJoined = yearJoined;
 		this.monthJoined = monthJoined;
-		this.dayJoined = dayJoined;
-		this.isForeigner = isForeigner;
-		this.gender = gender;
+		// this.dayJoined = dayJoined;
+		// this.isForeigner = isForeigner;
+		// this.gender = gender;
 		employeeSalary = new EmployeeSalary(isForeigner);
 
 		
