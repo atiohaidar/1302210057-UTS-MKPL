@@ -1,5 +1,8 @@
 package lib;
 
+/**
+ * class ini berfungsi untuk mengatur salary dari karyawah
+ */
 public class EmployeeSalary{
 
  private int monthlySalary = 0;
